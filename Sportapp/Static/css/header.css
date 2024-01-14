@@ -1,0 +1,40 @@
+header{
+    height: 45px;
+    
+}
+
+#containerheadset{
+    display:flex; 
+     justify-content: space-between;
+    
+}
+#auth{
+    display: flex; 
+    justify-content:flex-end;
+    margin-right: 5%;
+    width: 60%;
+}
+#signup{
+    display: flex;
+    margin-right: 5%;
+   justify-content: center;
+   align-items: center;
+}
+#signup>p{
+border:solid 0.1px darkorange;
+padding-left: 3px;
+padding-right: 3px;
+
+}
+#login>p{
+    border:solid 0.1px rgb(63, 3, 3);
+    padding-left: 3px;
+padding-right: 3px;
+    
+    }
+
+    header{
+        box-shadow: 2px 2px 2px rgb(126, 124, 124);
+    }
+
+    

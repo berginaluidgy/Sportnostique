@@ -1,0 +1,44 @@
+#authsystemparent{
+display:flex;
+justify-content: center;
+position: absolute;
+top: 60px;
+width: 100%;
+background-color: white;
+height: 80%;
+
+}
+#authchild{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    background-color: whitesmoke;
+}
+
+
+
+#q{
+ margin: 20px;
+}
+input{
+margin-top: 10px;
+
+   }
+   label
+
+#send{
+display: flex;
+justify-content: center;
+}
+#send>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#what{
+    text-align: center;
+    background-color: white;
+    padding: 4px;
+    font-weight: bold;
+}

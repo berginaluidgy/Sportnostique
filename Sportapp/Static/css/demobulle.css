@@ -1,0 +1,37 @@
+
+#spacedemo{
+    display: flex;
+    
+}
+#homebulle{
+    margin-right: 5%;
+    width: 5%;
+    height: 90px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+/* #homebull>div{
+    /* border-radius: 50%; */
+    /* width: 40px;
+    height: 40px;
+    background-color: rgb(70, 41, 41);
+} */
+
+ .bulle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* background-color: rgb(70, 41, 41); */
+    display: flex;
+    justify-content: center;
+    
+
+} 
+#baget{
+    width: 1px;
+   background-color: black;
+   position: relative;
+   top: -1000%;
+}

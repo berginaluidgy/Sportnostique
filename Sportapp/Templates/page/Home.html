@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="{% static 'css/stylehome.css'%}">
+ <link rel="stylesheet" href="{% static 'css/header.css'%}">
+ <link rel="stylesheet" href="{% static 'css/demobulle.css'%}">
+ <link rel="stylesheet" href="{% static 'css/generatepage.css'%}">
+ <link rel="stylesheet" href="{% static 'css/systemauth.css'%}">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="{% static 'css/mediaquery.css '%}">
+ <title>Document</title>
+</head>
+<body>
+    <section>
+        <header>
+<div id="containerheadset">
+    <div id="name"><p id="name">Sportnostique</p></div>
+    <div id="auth">
+        <div id="signup">
+        <p>S'Inscrire</p>
+    </div>
+    <div id="login">
+        <p>Se Connecter</p>
+    </div>
+</div>
+</div>
+
+        </header>
+    </section>
+
+
+
+  
+
+    <div id="hautpop" >
+        <div  id="authsystemparent">
+            
+              <div id="formlabel">
+                  
+                </div>
+            <div id="authchild"> 
+
+    <form action="" method="post" id="formauth" enctype="multipart/form-data">
+        {% csrf_token  %}
+    <p id="what">INSCRIPTION</p>
+    <div id="q">
+        <div id="forname"><label for="nom"> Votre Nom</label></div>
+        <div id=""><input type="text" name="nom" placeholder="Nom" id="nom" required='true'></div>
+    </div>
+    <div id="q">
+        <div id="labelprenom"><label for="prenom"> Votre prenonm</label></div>
+        <div id=""><input type="text"  name="prenom" placeholder="Prenom" id="Prenom" ></div>
+    </div>
+    <!-- <div id="q">
+        <div id=""><label for="email">Votre email</label></div>
+        <div id=""><input type="email"  name="email" placeholder="@Adresse Email" id="email"></div>
+    </div> -->
+    <div id="q"> 
+        <div id="labelphone"><label for="phone">Votre Numero de telephone</label></div>
+        <div id=""><input type="tel"  name="phone" placeholder="+509" id="phone"></div>
+    </div>
+    <div id="q">
+        <div id=""><label for="Mot de passe">Mot de passe</label></div>
+        <div id=""><input type="password"  name="Mot de passe" placeholder="Mot de passe" id="passe" required='true'></div>
+    </div>
+
+    <input id='csn' type="hidden" name="" value='signup'>
+    <div id="send">
+        
+        <div id=""><button type="submit"  id="submit">S'Inscrire</button></div>
+    </div>
+</form>
+
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="{% static 'js/systemauth.js'%}"></script>
+</body>
+</html>

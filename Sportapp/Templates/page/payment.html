@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"  href="{% static   'css/Payment.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mediaquery.css '%}">
+</head>
+<body>
+    <div id="redacteur">
+        <div id="redacteurinfo">
+<div id="infopayment">
+    <div id="etape">
+        <!-- <p id="primary"> Abonnement   SPORTNOSTIQUE
+            
+        </p> -->
+<div id="nfoactiveuser">
+    <p>Kont ou an pa aktive,
+        enskri nan abonman 500 goud la pou ka aktive kont ou an.
+    </p>
+</div>
+    </div>
+  
+
+<!-- 
+    <div id="etap2">
+        <div id="info2"><p>Lew Finn peye  </p></div>
+
+
+        <div id="">
+            <ul id="activeetap">
+
+                <li>1) Klike Sou bouton sa pou --Voye yon ScreenShot de paiement
+                    pa whatsapp pou nou .<button id="wa">Whatsapp</button>
+               </li>
+                <li>
+                   2) Antre Kod Nou bawou a pou ka aktive Kont ou a .
+                </li>
+                <li id="most"><form action="" method="post">
+{% csrf_token  %}
+
+<div id="pay"><input type="text" name="pay" id="pay"></div>
+               <div id="sendpay"><input type="submit" name="PAYER"  value="ACTIVER " placeholder="Kod aktivasyon"></div>
+</form></li>
+            </ul>
+        </div>
+    </div> -->
+
+
+</div>
+
+        </div>
+
+
+        <div id="centralpay">
+            <div id="prixdetails">
+                <p id="datails"> Prix : 500 HTG</p>
+                <p id="datails2">
+                L' abonnement coute 500 HTG et s'etale sur une periode de 30 jours,
+                il faut se souscrire a l'abonnementpour pouvoir acceder au Pronostique. 
+                </p>
+            </div>
+            <div id="clickpay"><p id="pay"> Payer </p></div>
+        </div>
+
+
+        <div id="Avantaj">
+
+            <div id="inf">
+                <p>KISA ROBO NOU YO AP FE POU OU?</p>
+                <ul>
+                    <li>WAP Konn Rezilta tout match Yo</li>
+                    <li>WAP gen score Egzakt tout Match yo </li>
+                    <li>WAP Genyen Chak Jou Nan Paryaj </li>
+                    <li>WAP Ka Jwenn fich Gratis Lew finn Aktive kont ou an </li>
+                    <li>WAP ka fe lajan lew pataje Kod promo ou ba lot moun ,Jiska 100 HTG sou chak Gren moun ou Afilye</li>
+                </ul>
+            </div>
+        </div>
+        <div id="btn"><p id="btninfo">Ki Avantaj wap genyen lew enskri ?
+            klike pou Konnen.
+        </p></div>
+    </div>
+    <script src="{% static 'js/paypage.js'%}"></script>
+</body>
+</html>

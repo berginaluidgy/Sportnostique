@@ -1,0 +1,16 @@
+#allstats{
+    display:none;
+}
+#pricipale{
+    overflow-x: scroll;
+    padding: 1%;
+    background-color: lightgray;
+}
+#corps{
+    width: 100%;
+    margin-top: 20%;
+overflow: hidden;
+}
+#childparent{
+    display:none;
+}

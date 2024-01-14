@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/adm.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/mediaquery.css '%}">
+   <title >Admin</title>
+</head>
+<body>
+    <section id="secgenerale">
+        <div id="parentgenerale">
+            <div id="div_numbuser">
+                <div id=""><p id="">Utilisateur </p> </div>
+                <div id=""><p id="">{{numberuser}}</p></div>
+            </div>
+            <div id="div_argentggre">
+                <div id=""><p id="">Gain</p> </div>
+                <div id=""><p id="">{{numberargent}} $HT</p></div>
+            </div>
+            <div id="div_inscritauj">
+                <div id=""><p id="">Aujourd'hui</p> </div>
+                <div id=""><p id="">+{{nbrusertoday}}</p></div>
+            </div>
+            <div id="div_enligne">
+                <div id=""><p id="">En ligne</p> </div>
+                <div id=""><p id=""> +300</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="secaction">
+<div id="parentreactionaction">
+    <div id="bar">
+        <p id="">
+            Liste Utilisateur
+        </p>
+        <p id="">Active</p>
+        <p id="">SuperAction</p>
+        <p id="">*</p>
+    </div>
+    <div id="barchild">
+        <div id="listeofuser20"></div>
+    <div id="activeuser">
+        <div id="">
+            <div id="">
+                <form action="" method="get" id='form'>
+                    {% csrf_token  %}
+                <input type="search" name="search" id="search">
+            <div id="btn"><input type="submit" name="submits"></div>
+            </form>
+        </div>
+        </div>
+    <div id="containersolissearch"></div>
+    </div>
+    <div id="SuperAction"></div>
+    <div id="*"></div> 
+    </div>
+   
+</div>
+    </section>
+    <section id="sec"></section>
+    <script src="{% static 'js/adm.js'%}"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+#prixdetails{
+    background-color:  rgb(226, 223, 223);
+    padding: 5px;
+    padding-left: 7%;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    border: solid 5px;
+    border-left-color: darkorange;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+
+}
+#primary{
+    background-color: darkorange;
+    padding: 10px;
+}
+#clickpay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pay{
+    border: solid 1px darkorange;
+    display:flex;
+    width: 30%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: large;
+}
+
+#nfoactiveuser{
+    background-color: rgb(226, 223, 223);
+    padding: 2px;
+}
+#nfoactiveuser>p{
+    font-size: 19px;
+    background-color:darkorange;
+    padding: 4px;
+    border-radius: 5px;
+    border: solid 4px darkorange;
+   border-left-color: white;
+   border-right-color: transparent;
+   border-bottom-color: transparent;
+   border-top-color: transparent;
+}

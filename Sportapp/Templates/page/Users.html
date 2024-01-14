@@ -1,0 +1,199 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="{% static 'css/demobulle.css'%}">
+    <link rel="stylesheet" href="{% static 'css/generatepage.css'%}">
+    <link rel="stylesheet" href="{% static 'css/systemauth.css'%}">
+    <link rel="stylesheet" href="{% static 'css/enteteUser.css'%}">
+    <link rel="stylesheet" href="{% static 'css/generatefiche.css'%}">
+    <link rel="stylesheet" href="{% static 'css/part_pronos.css'%}">
+    <link rel="stylesheet" href="{% static 'css/mediaquery.css '%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section>
+
+<div id="basecontactuser"></div>
+
+
+
+        <div id="bigparentdemo">
+            <div id="title"><p id="title">SPORTNOSTIQUE</p></div>
+            <div id="demo"></div>
+        </div>
+        <div id="infoaccount">
+         <div id="nameuser">
+             <p id="impname">{{nom}}</p>
+         </div>
+         <div id="assitance">
+             <p id="">Assistance <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i></p>
+         </div>
+         <div id="">
+             <p id="">communauter <i class="fa fa-users" aria-hidden="true"></i></p>
+         </div>
+         <div id="">
+             <p id="xmoney">{{argent}} HTG <i class="fa fa-money" aria-hidden="true"></i></p>
+         </div>
+         <div id="">
+            <p id="MACT">Mon compte</p>
+
+            <div id="mact">
+                <div id="actif"><p id="">Actif</p>
+                </div>
+                <div id=""></div>
+                <div id=""></div>
+            </div>
+        </div>
+        </div>
+        
+        <div id="generateparent">
+            <p id="generateinfo">Conseil pour les parieurs </p>
+            <div id="subgenerate">
+                <div id="pgparyajlakay"><p>Utilise des coupons qui sont uniquement etudier par des robots</p></div>
+                <div id="pgparyajpam"><p>Utilise une strategie adapter pour un gain</p></div>
+                <div id="pggoalcash"><p>1er Strategie : petite Mise ,beaucoup d'evenement</p></div>
+                <div id="pagbelparyaj"><p>2er Strategie: Grosse mise ,un nombre restrient d'evenement</p></div>
+                <div id="pg1Xbet"><p>Faire plusieur Coupons pans une journee sur des equipes differentes</p></div>
+                <div id="pgUnibet"><p>Utiliser Fierement SPORTNOSTIQUE</p></div>
+                <div id="pgsport8000"><p>Etudier d'abord la forme d'un equipe avant de miser sur elle</p></div>
+        
+            </div>
+        </div>
+        
+        
+        
+        <form action="" method="post" id="formauth" enctype="multipart/form-data">
+            {% csrf_token  %}
+        </form>
+            </section>
+            <section>
+        
+        <div id="pronostique">
+            <div id="allleague">
+                 <div id="buttonallleague"><p id="allleaguep"> Tous les ligues <i class="fa fa-trophy" aria-hidden="true"></i></p></div>
+                <p id="info"> Pronostiques  </p>
+               
+            </div>
+            <div id="pronostiqueparent">
+                <div id="leaguepronos">
+                    <div id="stars"></div>
+                    <div id="containerleague"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="allstats">
+            <div id="back"><p id="retour">Sortir</p></div>
+            <div id="container">
+                <div id="team1">
+                    <p id="team1name"></p>
+                    <div id="stats2b">
+                        <div id="allst">
+                            <div id="rank"><p></p></div>
+                            <div id="buttotal"><p></p></div>
+                            <div id="butencaisser"><p></p></div>
+                            <div id="buttotalalamaison"><p></p></div>
+                            <div id="butencaisseralamaison"><p></p></div>
+                            <div id="buttotalalexterieur"><p></p></div>
+                            <div id="butencaisseralexterieur"><p></p></div>
+                            <div id="matchplay"><p></p></div>
+                            <div id="matchplaywin"><p></p></div>
+                            <div id="matchplaylose"><p></p></div>
+                            <div id="matchplaynull"><p></p></div>
+                            <div id="matchplayalamaison"><p></p></div>
+                            <div id="matchplaywinalamaison"><p></p></div>
+                            <div id="matchplaylosealamaison"><p></p></div>
+                            <div id="matchplaynullalamaison"><p></p></div>
+                            <div id="matchplayalexterieur"><p></p></div>
+                            <div id="matchplaywinalexterieur"><p></p></div>
+                            <div id="matchplaylosealexterieur"><p></p></div>
+                            <div id="matchplaynullalexterieur"><p></p></div>
+                            
+                        </div>
+                        <div id="">
+                            <div id="nombredebut"><p></p></div>
+                            <div id="butencaisser"><p></p></div>
+                            <div id="butmitan"><p></p></div>
+                            <div id="butmitan2"><p></p></div>
+                            <div id="cartonjaune"><p></p></div>
+                            <div id="corner"><p></p></div>
+                            <div id="nbrlose"><p></p></div>
+                            <div id="nbrdraw"><p></p></div>
+                            <div id="faute"><p></p></div>
+                            <div id="force"><p></p></div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="team2">
+                    <p id="team2name"></p>
+                    <div id="stats2b">
+                        <div id="allst">
+                            <div id="rank2"><p></p></div>
+                            <div id="buttotal2"><p></p></div>
+                            <div id="butencaisser2"><p></p></div>
+                            <div id="buttotalalamaison2"><p></p></div>
+                            <div id="butencaisseralamaison2"><p></p></div>
+                            <div id="buttotalalexterieur2"><p></p></div>
+                            <div id="butencaisseralexterieur2"><p></p></div>
+                            <div id="matchplay2"><p></p></div>
+                            <div id="matchplaywin2"><p></p></div>
+                            <div id="matchplaylose2"><p></p></div>
+                            <div id="matchplaynull2"><p></p></div>
+                            <div id="matchplayalamaison2"><p></p></div>
+                            <div id="matchplaywinalamaison2"><p></p></div>
+                            <div id="matchplaylosealamaison2"><p></p></div>
+                            <div id="matchplaynullalamaison2"><p></p></div>
+                            <div id="matchplayalexterieur2"><p></p></div>
+                            <div id="matchplaywinalexterieur2"><p></p></div>
+                            <div id="matchplaylosealexterieur2"><p></p></div>
+                            <div id="matchplaynullalexterieur2"><p></p></div>
+                            
+                        </div>
+                        <div id="">
+                            <div id="nombredebut"><p></p></div>
+                            <div id="butencaisser"><p></p></div>
+                            <div id="butmitan"><p></p></div>
+                            <div id="butmitan2"><p></p></div>
+                            <div id="cartonjaune"><p></p></div>
+                            <div id="corner"><p></p></div>
+                            <div id="nbrlose"><p></p></div>
+                            <div id="nbrdraw"><p></p></div>
+                            <div id="faute"><p></p></div>
+                            <div id="force"><p></p></div>
+                            
+                            
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+            </section>
+            <section>
+        
+        
+        
+        
+                
+        
+            </section>
+        
+            <script src="{% static 'js/demopage.js'%}"></script>
+            <script src="{% static 'js/generatepage.js'%}"></script>
+             <script src="{% static 'js/enteteUser.js'%}"></script>
+             <script src="{% static 'js/generatefiche.js'%}"></script>
+             <script src="{% static 'js/part_pronos.js'%}"></script>
+             <script src="{% static 'js/generatestatsonlypage.js'%}"></script>
+             
+</body>
+</html>

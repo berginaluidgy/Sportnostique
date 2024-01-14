@@ -1,0 +1,197 @@
+  # if roundteam == (round+str(len(teamdata))) or roundteam == (round+str(len(teamdata)-1)) or  roundteam ==(round+str(len(teamdata)-2)) or  roundteam ==(round+str(len(teamdata)-3)) or  roundteam ==(round+str(len(teamdata)-4)):
+      #   idfix=event['fixture']['id']
+        
+      #   scraperescueevent=base('fixtures?id='+str(idfix))
+    
+      #   direct1='home'
+      #   direct2='away'
+      #   if scraperescueevent[0]['teams'][direct1]['id']==team:
+      #     goaldeam=scraperescueevent[0]['score']['fulltime'][direct1]
+      #     nbrbut5.append(goaldeam)
+      #     goaldeammitan=scraperescueevent[0]['score']['halftime'][direct1]
+      #     nbrdebutmitan5.append(goaldeammitan)
+      #     nbrdebut2mitan5.append((goaldeam-goaldeammitan))
+      #     nbrbutencaisse5.append((scraperescueevent[0]['score']['halftime'][direct2]))
+      #     if scraperescueevent[0]['teams'][direct1]['winner']== True :
+      #       win5.append(True)
+          
+      #     elif scraperescueevent[0]['teams'][direct1]['winner']==None:
+      #       draw5.append(None)
+          
+      #     elif scraperescueevent[0]['teams'][direct1]['winner'] == False:
+      #       lose5.append(False)
+          
+      #     else:
+      #       pass
+          
+
+      #     stats= scraperescueevent[0]['statistics']
+      #     for sts in stats:
+              
+      #         if sts['team']['id']==team:
+      #           substat= sts['statistics']
+      #           for substs  in substat:
+      #             if substs['type']=="Corner Kicks":
+      #               if substs['value']==None:
+      #                 nbrdecorner5.append(0)
+      #               else:
+      #                 kikscorner=substs['value']
+      #                 nbrdecorner5.append(kikscorner)
+      #             elif substs['type']=="Total Shots":  
+      #               if substs['value']==None:
+      #                 TotalShotstab5.append(0)
+      #               else:
+      #                 totalshots=substs['value']
+      #                 TotalShotstab5.append(totalshots)
+                    
+      #             elif substs['type']=="Fouls": 
+      #               if substs['value']==None:
+      #                 Foulstab5.append(0)
+      #               else: 
+      #                 fouls=substs['value']  
+      #                 Foulstab5.append(fouls)
+      #             elif substs['type']=="Yellow Cards": 
+      #               if substs['value']==None:
+      #                 nbrcartonjaune5.append(0)
+      #               else:  
+      #                 YellowCard=substs['value'] 
+      #                 nbrcartonjaune5.append(YellowCard)
+      #             elif substs['type']=="Red Cards":   
+      #               if substs['value']==None:
+      #                 nbrcartonrouge5.append(0)
+      #               else: 
+      #                 RedCards=substs['value'] 
+      #                 nbrcartonrouge5.append(RedCards)
+      #             elif substs['type']=="Ball Possession": 
+      #               if substs['value']==None:
+      #                 BallPossessiontab5.append(0)
+      #               else: 
+      #                 bps=substs['value']
+      #                 BallPossessiontab5.append(bps)
+      #             else:
+      #               pass  
+              
+      #   else:
+      #     goaldeam= event['score']['fulltime'][direct2]
+      #     goaldeam=scraperescueevent[0]['score']['fulltime'][direct2]
+      #     nbrbut5.append(goaldeam)
+      #     goaldeammitan=scraperescueevent[0]['score']['halftime'][direct2]
+      #     nbrdebutmitan5.append(goaldeammitan)
+      #     nbrdebut2mitan5.append((goaldeam-goaldeammitan))
+      #     nbrbutencaisse5.append((scraperescueevent[0]['score']['halftime'][direct2]))
+      #     if scraperescueevent[0]['teams'][direct2]['winner']== True :
+      #       win5.append(True)
+          
+      #     elif scraperescueevent[0]['teams'][direct2]['winner']==None:
+      #       draw5.append(None)
+          
+      #     elif scraperescueevent[0]['teams'][direct2]['winner'] == False:
+      #       lose5.append(False)
+          
+      #     else:
+      #       pass 
+        
+      #     stats= scraperescueevent[0]['statistics']
+      
+      #     for sts in stats:
+            
+      #       if sts['team']['id']==team:
+      #         substat= sts['statistics']
+      #         for substs  in substat:
+      #           if substs['type']=="Corner Kicks":
+      #             if substs['value']==None:
+      #               nbrdecorner5.append(0)
+      #             else:
+      #               kikscorner=substs['value']
+      #               nbrdecorner5.append(kikscorner)
+      #           elif substs['type']=="Total Shots":  
+      #             if substs['value']==None:
+      #               TotalShotstab5.append(0)
+      #             else:
+      #               totalshots=substs['value']
+                    
+      #           elif substs['type']=="Fouls": 
+      #             if substs['value']==None:
+      #               Foulstab5.append(0)
+      #             else: 
+      #               fouls=substs['value']  
+      #               Foulstab5.append(fouls)
+      #           elif substs['type']=="Yellow Cards": 
+      #             if substs['value']==None:
+      #               nbrcartonjaune5.append(0)
+      #             else:  
+      #               YellowCard=substs['value'] 
+      #               nbrcartonjaune5.append(YellowCard)
+      #           elif substs['type']=="Red Cards":   
+      #             if substs['value']==None:
+      #               nbrcartonrouge5.append(0)
+      #             else: 
+      #               RedCards=substs['value'] 
+      #               nbrcartonrouge5.append(RedCards)
+      #           elif substs['type']=="Ball Possession": 
+      #             if substs['value']==None:
+      #               BallPossessiontab5.append(0)
+      #             else: 
+      #               bps=substs['value']
+      #               BallPossessiontab5.append(bps)
+      #           else:
+      #             pass
+
+
+
+
+       #   'moyenne5':{
+        
+      #   'but':{
+      #     'nombredebut':sum(nbrbut5),
+      #   'moyenne_nombredebut':sum(nbrbut5)/5,
+      #     },
+      #   'butencaisser':{
+      #     'nombre_de_but_encaisse':sum(nbrbutencaisse5),
+      #   'moyenne_de_but_encaisse':sum(nbrbutencaisse5)/5,
+      #     },
+      #   'butmitan':{
+      #     'nombre_de_but_mitan':sum(nbrdebutmitan5),
+      #   'moyenne_de_but_mitan':sum(nbrdebutmitan5)/5,
+      #     },
+      #   'butmitan2':{
+      #     'nombre_de_but_2mitan':sum(nbrdebut2mitan5),
+      #   'moyenne_de_but_2mitan':sum(nbrdebut2mitan5)/5,
+      #     },
+      #   'cartonjaune':{
+      #     'nombre_de_carton_jaune':sum(nbrcartonjaune5),
+      #   'moyenne_de_carton_jaune':sum(nbrcartonjaune5)/5,
+      #     },
+      
+      #   'corner':{
+      #     'nombre_de_corner':sum(nbrdecorner5),
+      #   'moyenne_de_corner':sum(nbrdecorner5)/5,
+      #     },
+      #   'nbrwin':{
+      #     'nombre_de_win':len(win5),
+      #   'pourcentage_de_win':(len(win5)/5)*100,
+      #     },
+      #   'nbrlose':{
+      #     'nombre_de_lose':len(lose5),
+      #   'pourcentage_de_lose':(len(lose5)/5)*100,
+      #     },
+      #   'nbrdraw':{
+      #     'nombre_de_draw':len(draw5),
+      #   'pourcentage_de_draw':(len(draw5)/5)*100,
+          
+      #     },
+      #   # 'nbrardugardien':{
+      #   #   'nombre_de_arretdegardien':sum(arretdegardien5),
+      #   # 'moyenne_de_arretdegardien':sum(arretdegardien5)/5,
+      #   #   },
+      #   'faute':{
+      #     'nombre_de_faute':sum(Foulstab5),
+      #   'moyenne_de_faute':sum(Foulstab5)/5,
+      #     },
+      #   # 'possession':{
+      #   #   'nombre_de_possession':sum(BallPossessiontab5),
+      #   # 'moyenne_de_possession':sum(BallPossessiontab5)/5,
+      #   #   },
+
+        
+      # }
