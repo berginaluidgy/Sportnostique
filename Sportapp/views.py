@@ -124,6 +124,7 @@ def home(request):
     
     print(name,boost,password,numero)
     if boost=='signup':
+        print('signup')
         endpoint=base_uri+'signup'
         response=requests.post(endpoint,json={
    
@@ -142,10 +143,12 @@ def home(request):
             
             return render(request,directionpayment)
     if boost=='login':
+        print('loginreper')
         user=User.objects.filter(name=name).first()
         checkingUser=user.check_password(password)
-        print(user.check_password(password))
+        print('etape 2',checkingUser)
         if checkingUser==True:
+            print('login2')
             Accountfilter=Account.objects.filter(nom=name).first()
             print(Accountfilter.nom)
             if Accountfilter.actifaccount==True: 
@@ -207,7 +210,7 @@ def adm(request):
     Accountfilter=Account.objects.all()
     sumargent=[]
     print(str(date.today()))
-    print(str(alluser[5].date_joined).find(str(date.today())))
+   
     for arg in Accountfilter:
         if arg.actifaccount==True:
             sumargent.append(1)
@@ -228,7 +231,7 @@ def adm(request):
         print(str(strdate)+'ok')
     context={
         'numberuser':nbruser,
-        'numberargent':nbragent*60,
+        'numberargent':nbragent*500,
         'nbrusertoday':sum(datetab)
         
     }

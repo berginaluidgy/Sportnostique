@@ -100,7 +100,7 @@ top:0px;
    width:96%;
    box-shadow: 2px 2px 7px 1px rgb(226, 223, 223);
    margin-left:2%;
- margin-bottom:6px;
+ margin-bottom:2px;
 }
 #entete{
    display: flex;
@@ -126,6 +126,7 @@ padding-left: 3%;
 padding-right: 3%;
 border-radius: 5px;
 font-weight: bolder ;
+margin-left: 2%;
 }
 #stats{
    color:darkorange;

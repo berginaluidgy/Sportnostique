@@ -483,134 +483,134 @@ def pronossafe(integerfix,leagueid):
         return 'NoneAgain'
     def secondpronos():
       if ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>1 and ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)<3:
-        carton=[' carton +2']
+        carton=[' carton -2']
         buildStat['Pronos2']=carton
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>3 and ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)<5:
-        carton=[' carton +3']
+        carton=[' carton -3']
         buildStat['Pronos2']=carton
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>4 and ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)<6:
-        carton=[' carton +4']
+        carton=[' carton -4']
         buildStat['Pronos2']=carton
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>5 and ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)<7:
-        carton=['carton +5']
+        carton=['carton -5']
         buildStat['Pronos2']=carton
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>6 and ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)<8:
-        carton=['carton +6']
+        carton=['carton -6']
         buildStat['Pronos2']=carton
         return buildStat  
       
       elif ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>7 and ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)<9:
-        carton=['carton +7']
+        carton=['carton -7']
         buildStat['Pronos2']=carton
         return buildStat 
       elif ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>8 and ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)<10:
-        carton=[' carton +8']
+        carton=[' carton -8']
         buildStat['Pronos2']=carton
         return buildStat
       
       elif ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>9 and ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)<11:
-        carton=['carton +9']
+        carton=['carton -9']
         buildStat['Pronos2']=carton
         return buildStat
       
       
       elif ((statsAndpronostics[0]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune']+statsAndpronostics[1]['moyenne3']['cartonjaune']['moyenne_de_carton_jaune'])/2)>10 :
-        carton=['carton +10']
+        carton=['carton -10']
         buildStat['Pronos2']=carton
         return buildStat
       else:
         pass
     def thirdpronos():
       if ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>3 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<5:
-        corner=['corner  +5.5']
+        corner=['corner  -6.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>4 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<6:
-        corner=['corner +6.5']
+        corner=['corner -7.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>5 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<7:
-        corner=['corner +7.5']
+        corner=['corner -8.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>6 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<8:
-        corner=['corner +8.5']
+        corner=['corner -9.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>7 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<9:
-        corner=['corner +9.5']
+        corner=['corner -10.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>8 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<10:
-        corner=['corner +10.5']
+        corner=['corner -11.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>9 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<11:
-        corner=['corner +11.5']
+        corner=['corner -12.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>10 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<12:
-        corner=['corner +12.5']
+        corner=['corner -13.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>11 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<13:
-        corner=['corner +13.5']
+        corner=['corner -14.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>12 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<14:
-        corner=['corner +14.5']
+        corner=['corner -16.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>13 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<15:
-        corner=['corner +15.5']
+        corner=['corner -17.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>14 and ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)<17:
-        corner=['corner +16.5']
+        corner=['corner -18.5']
         buildStat['Pronoscorner']=corner
         return buildStat
       elif ((statsAndpronostics[0]['moyenne3']['corner']['moyenne_de_corner']+statsAndpronostics[1]['moyenne3']['corner']['moyenne_de_corner'])/2)>17 :
-        corner=['corner +17.5']
+        corner=['corner -19.5']
         buildStat['Pronoscorner']=corner
         return buildStat
     def notsafe10():
       if statsAndpronostics[0]['moyenne3']['butmitan']['moyenne_de_but_mitan']<1:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN -0.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +' 1er MITAN -0.5 but'
         buildStat['Pronosnosafe']=[nosafe]
         return buildStat
       elif statsAndpronostics[0]['moyenne3']['butmitan']['moyenne_de_but_mitan']>=1 and statsAndpronostics[0]['moyenne3']['butmitan']['moyenne_de_but_mitan']<2:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN -1.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +' 1er MITAN -1.5 but'
         buildStat['Pronosnosafe']=[nosafe]
         return buildStat
       elif statsAndpronostics[0]['moyenne3']['butmitan']['moyenne_de_but_mitan']>=2 and statsAndpronostics[0]['moyenne3']['butmitan']['moyenne_de_but_mitan']<3:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN -2.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +' 1er MITAN -2.5 but'
         buildStat['Pronosnosafe']=[nosafe]
         return buildStat
       elif statsAndpronostics[0]['moyenne3']['butmitan']['moyenne_de_but_mitan']>=2 and statsAndpronostics[0]['moyenne3']['butmitan']['moyenne_de_but_mitan']<3:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN -2.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +' 1er MITAN -2.5 but'
         buildStat['Pronosnosafe']=[nosafe]
         return buildStat
       elif statsAndpronostics[0]['moyenne3']['butmitan']['moyenne_de_but_mitan']>3:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN +2.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +' 1er MITAN +2.5 but'
         buildStat['Pronosnosafe']=[nosafe]
         return buildStat
     def notsafe11():  
       if statsAndpronostics[1]['moyenne3']['butmitan']['moyenne_de_but_mitan']<1:
-        nosafe=statsAndpronostics[1]['nameteam'] +'1er MITAN -0.5 but'
+        nosafe=statsAndpronostics[1]['nameteam'] +' 1er MITAN -0.5 but'
         buildStat['Pronosnosafe1']=[nosafe]
         return buildStat
       elif statsAndpronostics[1]['moyenne3']['butmitan']['moyenne_de_but_mitan']>=1 and statsAndpronostics[1]['moyenne3']['butmitan']['moyenne_de_but_mitan']<2:
-        nosafe=statsAndpronostics[1]['nameteam'] +'1er MITAN -1.5 but'
+        nosafe=statsAndpronostics[1]['nameteam'] +' 1er MITAN -1.5 but'
         buildStat['Pronosnosafe1']=[nosafe]
         return buildStat
       elif statsAndpronostics[1]['moyenne3']['butmitan']['moyenne_de_but_mitan']>=2 and statsAndpronostics[1]['moyenne3']['butmitan']['moyenne_de_but_mitan']<3:
-        nosafe=statsAndpronostics[1]['nameteam'] +'1er MITAN -2.5 but'
+        nosafe=statsAndpronostics[1]['nameteam'] +' 1er MITAN -2.5 but'
         buildStat['Pronosnosafe1']=[nosafe]
         return buildStat
       elif statsAndpronostics[1]['moyenne3']['butmitan']['moyenne_de_but_mitan']>=2 and statsAndpronostics[1]['moyenne3']['butmitan']['moyenne_de_but_mitan']<3:
@@ -623,43 +623,43 @@ def pronossafe(integerfix,leagueid):
         return buildStat
     def notsafe20():
       if statsAndpronostics[0]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']<1:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN -0.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +'  2er MITAN -0.5 but'
         buildStat['Pronosnosafe2']=[nosafe]
         return buildStat
       elif statsAndpronostics[0]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']>=1 and statsAndpronostics[0]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']<2:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN -1.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +'  2er MITAN -1.5 but'
         buildStat['Pronosnosafe2']=[nosafe]
         return buildStat
       elif statsAndpronostics[0]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']>=2 and statsAndpronostics[0]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']<3:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN -2.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +'  2er MITAN -2.5 but'
         buildStat['Pronosnosafe2']=[nosafe]
         return buildStat
       elif statsAndpronostics[0]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']>=2 and statsAndpronostics[0]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']<3:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN -2.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +'  2er MITAN -2.5 but'
         buildStat['Pronosnosafe2']=[nosafe]
         return buildStat
       elif statsAndpronostics[0]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']>3:
-        nosafe=statsAndpronostics[0]['nameteam'] +'1er MITAN +2.5 but'
+        nosafe=statsAndpronostics[0]['nameteam'] +'  2er MITAN +2.5 but'
         buildStat['Pronosnosafe2']=[nosafe]
     def notsafe21():
       if statsAndpronostics[1]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']<1:
-        nosafe=statsAndpronostics[1]['nameteam'] +'1er MITAN -0.5 but'
+        nosafe=statsAndpronostics[1]['nameteam'] +'  2er MITAN -0.5 but'
         buildStat['Pronosnosafe3']=[nosafe]
         return buildStat
       elif statsAndpronostics[1]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']>=1 and statsAndpronostics[1]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']<2:
-        nosafe=statsAndpronostics[1]['nameteam'] +'1er MITAN -1.5 but'
+        nosafe=statsAndpronostics[1]['nameteam'] +'  2er MITAN -1.5 but'
         buildStat['Pronosnosafe3']=[nosafe]
         return buildStat
       elif statsAndpronostics[1]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']>=2 and statsAndpronostics[1]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']<3:
-        nosafe=statsAndpronostics[1]['nameteam'] +'1er MITAN -2.5 but'
+        nosafe=statsAndpronostics[1]['nameteam'] +'  2er MITAN -2.5 but'
         buildStat['Pronosnosafe3']=[nosafe]
         return buildStat
       elif statsAndpronostics[1]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']>=2 and statsAndpronostics[1]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']<3:
-        nosafe=statsAndpronostics[1]['nameteam'] +'1er MITAN -2.5 but'
+        nosafe=statsAndpronostics[1]['nameteam'] +'  2er MITAN -2.5 but'
         buildStat['Pronosnosafe3']=[nosafe]
         return buildStat
       elif statsAndpronostics[1]['moyenne3']['butmitan2']['moyenne_de_but_2mitan']>3:
-        nosafe=statsAndpronostics[1]['nameteam'] +'1er MITAN +2.5 but'
+        nosafe=statsAndpronostics[1]['nameteam'] +'  2er MITAN +2.5 but'
         buildStat['Pronosnosafe3']=[nosafe]
         return buildStat   
     def notmestudy():

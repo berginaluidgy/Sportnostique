@@ -1,5 +1,7 @@
 from.views import home,RegisterApi,loginApi,Userpage,payment,paymentmoncash,getpronos,adm,updatechecking,updating,admin_get_Unique_user
 from django.urls import path
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 urlpatterns=[
     path('',home ),
     path('signup',RegisterApi.as_view()),
@@ -13,6 +15,6 @@ urlpatterns=[
     path('updating/<int:pk>',updating.as_view()),
     path('getuser/<str:name>',admin_get_Unique_user),
     # path('login',login)
-   
-    
 ]
+
+urlpatterns +=staticfiles_urlpatterns()
