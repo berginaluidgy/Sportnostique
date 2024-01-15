@@ -127,23 +127,25 @@ def home(request):
         print('signup')
         endpoint=base_uri+'signup'
         print(endpoint)
-        response=requests.post(endpoint,json={
-   
-        "name":name,
-        "prenom":prenom,
-        "password":password,
+        print('gooooo')
+        Usercreate=User.objects.create(name=name,prenom=prenom, password=password)
+        user=User.objects.filter(name=name).first()
+        account=Account.objects.create(nom=name,prenom=prenom,tel=numero,affiliate=0,argentGagner=0,codeAff=0,identifiant=0)
+        return render(request,directionpayment)   
+    #    response=requests.post(endpoint,json={
+   #
+     #   "name":name,
+       # "prenom":prenom,
+        #"password":password,
 
-        })
+        #})
 
-        print(response.status_code)
-        print(response.json())
-        if response.status_code==200:
-            print('gooooo')
-            user=User.objects.filter(name=name).first()
-            account=Account.objects.create(nom=name,prenom=prenom,tel=numero,affiliate=0,argentGagner=0,codeAff=0,identifiant=0)
-           
+      #  print(response.status_code)
+        #print(response.json())
+       # if response.status_code==200:
             
-            return render(request,directionpayment)
+            
+            
     if boost=='login':
         print('loginreper')
         user=User.objects.filter(name=name).first()
