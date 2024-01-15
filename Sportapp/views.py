@@ -2,6 +2,8 @@ from http.client import responses
 from django.http import JsonResponse
 import requests
 import random 
+from django.contrib.auth import authenticate, login
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.exceptions import AuthenticationFailed
@@ -150,7 +152,8 @@ def home(request):
     if boost=='login':
         print('loginreper')
         user=User.objects.filter(name=name).first()
-        checkingUser=user.check_password(password)
+        #checkingUser=user.check_password(password)
+        checkingUser=authenticate(request, username=username, password=password)
         print('etape 2',checkingUser)
         if checkingUser==True:
             print('login2')
