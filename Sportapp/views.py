@@ -125,7 +125,7 @@ def home(request):
     print(name,boost,password,numero)
     if boost=='signup':
         print('signup')
-        endpoint=base_uri+'signup'
+        endpoint=base_uri+'/signup'
         response=requests.post(endpoint,json={
    
         "name":name,
@@ -137,6 +137,7 @@ def home(request):
         print(response.status_code)
         print(response.json())
         if response.status_code==200:
+            print('gooooo')
             user=User.objects.filter(name=name).first()
             account=Account.objects.create(nom=name,prenom=prenom,tel=numero,affiliate=0,argentGagner=0,codeAff=0,identifiant=0)
            
