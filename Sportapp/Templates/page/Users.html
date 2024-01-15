@@ -13,11 +13,184 @@
     <link rel="stylesheet" href="{% static 'css/enteteUser.css'%}">
     <link rel="stylesheet" href="{% static 'css/generatefiche.css'%}">
     <link rel="stylesheet" href="{% static 'css/part_pronos.css'%}">
-    <link rel="stylesheet" href="{% static 'css/mediaquery.css '%}">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> --> -->
+    <link rel="stylesheet" href="{% static 'css/mediaquery.css '%}">--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 
 
 <style>
+
+body{
+    margin: 0%;
+    padding: 0%;
+
+}
+#generateparent{
+    overflow: hidden;
+}
+
+#subgenerate{
+    display: flex;
+    height: auto;
+    
+background-color: whitesmoke;
+ 
+ animation-name: playbet;
+ animation-duration: 40s;
+ animation-timing-function: none;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+@keyframes playbet{
+    from{
+        transform: translateX(0);
+        
+    }
+    to{
+        transform: translateX(-100%);
+      
+    }
+}
+
+#subgenerate>div{
+    border-radius: 15px;
+    padding: 2%;
+    margin-right: 4px;
+    /* background-color:rgb(226, 223, 223); */
+    background-color: darkorange;
+    width: 50%;
+   flex-shrink: 0;
+   /* color:darkorange */
+   color:white;
+}
+#subgenerate>div>p{
+    text-align: center;
+}
+
+#childparentx{
+     flex-shrink: 0;
+    position: relative;
+    top: 18px;
+    left: 20px;
+    width: 18%;
+    height: 40px;
+    display: flex;
+    color:darkorange;
+    border: solid 2px black;
+    justify-content: center;
+    align-items: center;
+   
+    border-bottom-left-radius:25px ;
+    
+    border-top-left-radius:25px ;
+}
+
+#childparentx::after{
+    position: absolute;
+    top:140px; left: 150%;
+    content: 'wait 6mn';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    z-index: 10;
+    font-weight: bolder;
+    border: solid 1px darkorange;
+    border-radius: 50%;
+    animation-name: spinner;
+    animation-duration: 3s;
+    animation-iteration-count: 30;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes spinner{
+    /* 20%{
+        border: dashed 12px darkorange;
+    }
+    40%{
+        border: dashed 0.1px darkorange;
+    } */
+    from{
+        border: solid 0.1px rgba(255, 140, 0, 0.767);
+    }
+    to{
+        border: dashed 12px darkorange;
+    }
+}
+
+
+
+#childparentx2{
+    flex-shrink: 0;
+   position: relative;
+   top: 18px;
+   left: 20px;
+   width: 18%;
+   height: 40px;
+   display: flex;
+   color:darkorange;
+   border: solid 2px black;
+   justify-content: center;
+   align-items: center;
+  
+   border-bottom-left-radius:25px ;
+   
+   border-top-left-radius:25px ;
+}
+
+#childparentx2::after{
+   position:absolute;
+   top:140px; left: 150%;
+   content: 'wait 6 mn';
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90px;
+   width: 90px;
+   
+   font-weight: bolder;
+   border: solid 1px darkorange;
+   border-radius: 50%;
+   animation-name: spinner;
+   animation-duration: 3s;
+   animation-iteration-count: 30;
+  
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+   animation-direction: alternate;
+}
+@keyframes spinner{
+   /* 20%{
+       border: dashed 12px darkorange;
+   }
+   40%{
+       border: dashed 0.1px darkorange;
+   } */
+   from{
+       border: solid 0.1px rgba(255, 140, 0, 0.767);
+   }
+   to{
+       border: dashed 12px darkorange;
+   }
+}
+  #allstats{
+    display:none;
+}
+#pricipale{
+    overflow-x: scroll;
+    padding: 1%;
+    background-color: lightgray;
+}
+#corps{
+    width: 100%;
+    margin-top: 5%;
+overflow: hidden;
+}
+#childparent{
+    display:none;
+}
 #title{
     background-color: darkorange;
     position: relative;
