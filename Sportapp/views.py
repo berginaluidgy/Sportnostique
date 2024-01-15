@@ -3,6 +3,7 @@ from django.http import JsonResponse
 import requests
 import random 
 from django.shortcuts import render
+from django.http import HttpResponse
 from rest_framework.exceptions import AuthenticationFailed
 # Create your views here.
 from django.contrib.auth.decorators import login_required
@@ -166,6 +167,8 @@ def home(request):
                 return render(request,directionuser,context) 
             else:
                 return render(request,directionpayment) 
+        else:
+            return httpResponse("ou antre yon non oubyen yon motdpas ki pa korek")
     
      
     return render(request,directionhome)
