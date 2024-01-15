@@ -89,10 +89,18 @@ WSGI_APPLICATION = 'Sportnostique.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-   'default':dj_database_url.parse(config('DB_URL'))
-}
+#DATABASES = {
+ #  'default':dj_database_url.parse(config('DB_URL'))
+#}
+databases
 
+DATABASES = {
+    'default': dj_database_url.config(
+        # Feel free to alter this value to suit your needs.
+        default='postgres://sportnostique_db_user:5THtNuNSXZXMfAWh3ld3woHKlqHv7FAb@dpg-cmi2a4n109ks739iot50-a.oregon-postgres.render.com/sportnostique_db',
+        conn_max_age=600
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
