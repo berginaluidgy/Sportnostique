@@ -12,6 +12,7 @@
  <link rel="stylesheet" href="{% static 'css/systemauth.css'%}">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <link rel="stylesheet" href="{% static 'css/mediaquery.css '%}">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <title>Sportnostique</title>
 
  <style>
@@ -19,6 +20,13 @@
     height: 45px;
          background:darkorange;
     
+}
+#name{
+    font-size: 18px;
+    margin-left: 4%;
+    color: white;
+    font-weight: bolder;
+
 }
 
 #containerheadset{
@@ -37,18 +45,20 @@
     margin-right: 5%;
    justify-content: center;
    align-items: center;
+ 
 }
 #signup>p{
-border:solid 2px white;
-padding-left: 3px;
-padding-right: 3px;
-
+border:solid 2% white;
+/* padding-left: 3px;
+padding-right: 3px; */
+padding-right: 2%;
+color:white;
 }
 #login>p{
     border:solid 2px rgb(63, 3, 3);
     padding-left: 3px;
-padding-right: 3px;
-    
+
+
     }
 
     header{
@@ -65,12 +75,15 @@ width: 100%;
 background-color: white;
 height: 80%;
 
+
 }
 #authchild{
     display: flex;
     justify-content: center;
     width: 70%;
     background-color: whitesmoke;
+    border: solid 1px darkorange;
+    border-radius: 15px;
 }
 
 
@@ -80,19 +93,35 @@ height: 80%;
 }
 input{
 margin-top: 10px;
-    height:15px;
-
+    height:25px;
+    border-radius: 10px;
+padding-left: 4%;
+font-size: 18px;
    }
    label
 
 #send{
+    width: 100%;
 display: flex;
 justify-content: center;
+
 }
 #send>div{
+    
     width: 100%;
     display: flex;
     justify-content: center;
+}
+#send>div>button{
+    flex-shrink: 1;
+    width: 60%;
+    background-color: darkorange;
+    padding: 2%;
+    border-radius: 10px;
+    border: solid 1px transparent;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
 }
 
 #what{
@@ -100,6 +129,11 @@ justify-content: center;
     background-color: white;
     padding: 4px;
     font-weight: bold;
+}
+
+#fa-futbol-o{
+    color: white;
+    
 }
  </style>
 </head>

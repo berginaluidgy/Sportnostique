@@ -22,11 +22,12 @@ from rest_framework import generics
 import jwt
 from rest_framework.views import APIView
 import time
+from django.contrib.auth.hashers import make_password
 directionhome='./page/Home.html'
 directionuser='./page/Users.html'
 directionpayment='./page/payment.html'
 directionadm='./page/adminpage.html'
-
+directionlogin='/login'
 
 # @login_required
 @api_view(['get'])
@@ -96,6 +97,7 @@ class loginApi(APIView):
         name=request.data['name']
         password=request.data['password']     
         user=User.objects.filter(name=name).first()
+        print(user.password)
         if user is None:
             raise AuthenticationFailed("Nom d'utilisateur non trouvé")
         if not user.check_password(password):
@@ -128,31 +130,43 @@ def home(request):
     print(name,boost,password,numero)
     if boost=='signup':
         print('signup')
-        endpoint=base_uri+'signup'
+        endpoint='sportnostique.onrender.com/'+'signup/'
         print(endpoint)
-        print('gooooo')
-        Usercreate=User.objects.create(name=name,prenom=prenom, password=password)
+    #     print('gooooo')
+        Usercreate=User.objects.create(name=name,prenom=prenom, password=make_password(password))
         user=User.objects.filter(name=name).first()
         account=Account.objects.create(nom=name,prenom=prenom,tel=numero,affiliate=0,argentGagner=0,codeAff=0,identifiant=0)
         
-        response=requests.post('signup',json={
+    #     response=requests.post('signup',json={
    
-       "name":name,
-       "prenom":prenom,
-       "password":password,
+    #    "name":name,
+    #    "prenom":prenom,
+    #    "password":password,
 
-        })
+    #     })
 
-        print(response.status_code)
-        print(response.json())
+    #     print(response.status_code)
+    #     print(response.json())
        # if response.status_code==200:  
         return render(request,directionpayment)      
             
     if boost=='login':
+        # endpoint='//sportnostique.onrender.com/'+directionlogin
+        # print(endpoint)
+        # response=requests.post(endpoint,json={
+   
+        # "name":name,
+        
+        # "password":password,
+
+        # })
+        # print(response.status_code)
+        # print(response.json())
         print('loginreper')
         user=User.objects.filter(name=name).first()
         print(user)
         checkingUser=user.check_password(password)
+        print(checkingUser)
         #checkingUser=authenticate(request, username=name, password=password)
         print('etape 2',checkingUser)
         if checkingUser==True:
