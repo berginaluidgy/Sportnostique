@@ -82,6 +82,13 @@ justify-content: center;
     border-bottom: solid 1px darkorange;
 
 }
+
+        #btn{
+
+            height:20px;
+            background:darkorange;
+            color:white;
+    }
     </style>
 </head>
 <body>
@@ -148,7 +155,7 @@ console.log(btn.value)
 
 async function getdata() {
      console.log('https://'+window.location.host+'/getuser/'+taksearch.value)
-    const response = await fetch('http://'+window.location.host+'/getuser/'+taksearch.value);
+    const response = await fetch('https://'+window.location.host+'/getuser/'+taksearch.value);
     const data = await response.json();
     var nameusergetparent=document.createElement('div')
     var nameusergetparentw=document.createElement('div')
