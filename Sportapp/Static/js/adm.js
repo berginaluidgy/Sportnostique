@@ -7,7 +7,7 @@ console.log(window.location.host)
 console.log(btn.value)
 
 async function getdata() {
-     console.log('http://'+window.location.host+'/getuser/'+taksearch.value)
+     console.log('https://'+window.location.host+'/getuser/'+taksearch.value)
     const response = await fetch('http://'+window.location.host+'/getuser/'+taksearch.value);
     const data = await response.json();
     var nameusergetparent=document.createElement('div')
@@ -53,7 +53,7 @@ async function getdata() {
         console.log(nameusergetclique)
     async function getdata() {
      
-        const response = await fetch('http://'+window.location.host+'/checking/'+taksearch.value);
+        const response = await fetch('https://'+window.location.host+'/checking/'+taksearch.value);
         const data = await response.json();
         console.log(data)
         if(data.isactif==true){
