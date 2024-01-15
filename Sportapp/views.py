@@ -168,7 +168,7 @@ def home(request):
             else:
                 return render(request,directionpayment) 
         else:
-            return httpResponse("ou antre yon non oubyen yon motdpas ki pa korek")
+            return HttpResponse("ou antre yon non oubyen yon motdpas ki pa korek")
     
      
     return render(request,directionhome)
