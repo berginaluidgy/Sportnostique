@@ -192,7 +192,7 @@ console.log('res')
           setTimeout(()=>{
 
           },10000)
-          const response = await fetch('http://'+window.location.host+"/Pronos/"+betid+"/"+betidleague);
+          const response = await fetch('https://'+window.location.host+"/Pronos/"+betid+"/"+betidleague);
           const data = await response.json();
           console.log(data);
             console.log(data.stats,data.Pronos)
