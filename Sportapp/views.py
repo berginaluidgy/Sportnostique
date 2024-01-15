@@ -153,7 +153,7 @@ def home(request):
         print('loginreper')
         user=User.objects.filter(name=name).first()
         #checkingUser=user.check_password(password)
-        checkingUser=authenticate(request, username=username, password=password)
+        checkingUser=authenticate(request, username=name, password=password)
         print('etape 2',checkingUser)
         if checkingUser==True:
             print('login2')
