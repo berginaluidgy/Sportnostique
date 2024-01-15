@@ -125,7 +125,8 @@ def home(request):
     print(name,boost,password,numero)
     if boost=='signup':
         print('signup')
-        endpoint=base_uri+'/signup'
+        endpoint=base_uri+'signup'
+        print(endpoint)
         response=requests.post(endpoint,json={
    
         "name":name,
