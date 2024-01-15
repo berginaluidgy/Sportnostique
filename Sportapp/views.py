@@ -134,7 +134,7 @@ def home(request):
         Usercreate=User.objects.create(name=name,prenom=prenom, password=password)
         user=User.objects.filter(name=name).first()
         account=Account.objects.create(nom=name,prenom=prenom,tel=numero,affiliate=0,argentGagner=0,codeAff=0,identifiant=0)
-        return render(request,directionpayment)   
+        
         response=requests.post('signup',json={
    
        "name":name,
@@ -145,9 +145,8 @@ def home(request):
 
         print(response.status_code)
         print(response.json())
-       # if response.status_code==200:
-            
-            
+       # if response.status_code==200:  
+        return render(request,directionpayment)      
             
     if boost=='login':
         print('loginreper')
