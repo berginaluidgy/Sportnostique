@@ -255,7 +255,7 @@ def adm(request):
         print(str(strdate)+'ok')
     context={
         'numberuser':nbruser,
-        'numberargent':nbragent*500,
+        'numberargent':nbragent*100,
         'nbrusertoday':sum(datetab)
         
     }
