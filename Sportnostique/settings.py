@@ -90,9 +90,7 @@ WSGI_APPLICATION = 'Sportnostique.wsgi.application'
 # }
 
 #DATABASES = {
- #  'default':dj_database_url.parse(config('DB_URL'))
-#}
-databases
+ #  'default':dj_database_url.parse(config('DB_URL'))}
 
 DATABASES = {
     'default': dj_database_url.config(
