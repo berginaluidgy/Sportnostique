@@ -135,16 +135,16 @@ def home(request):
         user=User.objects.filter(name=name).first()
         account=Account.objects.create(nom=name,prenom=prenom,tel=numero,affiliate=0,argentGagner=0,codeAff=0,identifiant=0)
         return render(request,directionpayment)   
-    #    response=requests.post(endpoint,json={
-   #
-     #   "name":name,
-       # "prenom":prenom,
-        #"password":password,
+        response=requests.post('signup',json={
+   
+       "name":name,
+       "prenom":prenom,
+       "password":password,
 
-        #})
+        })
 
-      #  print(response.status_code)
-        #print(response.json())
+        print(response.status_code)
+        print(response.json())
        # if response.status_code==200:
             
             
